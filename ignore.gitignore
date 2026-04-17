@@ -1,8 +1,0 @@
-# KiCad ignores
-*-backups/
-*.bck
-*.kicad_prl
-*.sch-bak
-*~
-_autosave-*
-*.lck
