@@ -2250,7 +2250,7 @@ if(zero_crosses < 5){
             } else {
               filter_level = map(average_interval, 100, 500, 3, 12);
             }
-            if (commutation_interval < 50) {
+            if (commutation_interval < 150) {
               filter_level = 2;
             }
 

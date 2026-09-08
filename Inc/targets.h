@@ -12,7 +12,7 @@
 #endif
 
 #ifndef USE_MAKE
-#define BAYU_ELECTRA
+// #define ELECTRA_F051
 // #define F031_DEV
 // #define FD6288_F051
 // #define IFLIGHT
@@ -55,10 +55,10 @@
 // #define USE_ADC_INPUT
 // #define USE_ALKAS_DEBUG_LED
 
-#ifdef BAYU_ELECTRA_F051
+#ifdef ELECTRA_F051
 // #define LOOP_FREQUENCY_HZ 10000
-#define FILE_NAME "BAYU_ELECTRA_F051"
-#define FIRMWARE_NAME "BAYU_ELECTRA_F051"
+#define FILE_NAME "ELECTRA_F051"
+#define FIRMWARE_NAME "ELECTRA_F051"
 #define DEAD_TIME 45
 #define HARDWARE_GROUP_F0_B
 #define MILLIVOLT_PER_AMP 65
