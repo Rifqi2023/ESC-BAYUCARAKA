@@ -2255,7 +2255,7 @@ if(zero_crosses < 5){
             }
 
             if (eepromBuffer.auto_advance) {
-              auto_advance_level = map(duty_cycle, 100, 2000, 13, 23);
+              auto_advance_level = map(duty_cycle, 100, 2000, 13, 30);
             }
 
             /**************** old routine*********************/
