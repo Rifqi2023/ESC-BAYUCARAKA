@@ -326,7 +326,7 @@ uint8_t crsf_output_PWM_channel = 2;
 uint8_t telemetry_interval_ms = 30;
 uint8_t temp_advance;
 uint16_t motor_kv = 2000;
-uint8_t dead_time_override = DEAD_TIME;
+uint8_t dead_time_override = DEAD_TIME + 15;
 uint16_t stall_protect_target_interval = TARGET_STALL_PROTECTION_INTERVAL;
 uint16_t enter_sine_angle = 180;
 char do_once_sinemode = 0;
@@ -2250,12 +2250,12 @@ if(zero_crosses < 5){
             } else {
               filter_level = map(average_interval, 100, 500, 3, 12);
             }
-            if (commutation_interval < 150) {
+            if (commutation_interval < 200) {
               filter_level = 2;
             }
 
             if (eepromBuffer.auto_advance) {
-              auto_advance_level = map(duty_cycle, 100, 2000, 13, 30);
+              auto_advance_level = map(duty_cycle, 100, 2000, 13, 35);
             }
 
             /**************** old routine*********************/
